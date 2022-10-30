@@ -1,8 +1,8 @@
 ﻿namespace DVD_Store_API.Exceptions
 {
-    public class ObjectAlreadyExists : Exception
+    public class ObjectAlreadyExistsException : Exception
     {
-        public ObjectAlreadyExists() : base("Object Already Exists")
+        public ObjectAlreadyExistsException() : base("Object Already Exists")
         {
         }
     }

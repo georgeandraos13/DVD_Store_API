@@ -14,7 +14,7 @@ namespace DVD_Store_API.Repositories
         }
         public ICollection<Customer> GetCustomers()
         {
-            ICollection<Customer> customers=_dataContext.Customers.OrderBy(p=>p.Name).ToList();
+            ICollection<Customer> customers=_dataContext.Customers.OrderBy(p=>p.Name).OrderBy(p=>p.Name).ToList();
             if (customers.Count <= 0)
                 throw new ObjectNotFoundException();
             else
@@ -59,7 +59,7 @@ namespace DVD_Store_API.Repositories
             if (customer.Name != null)
             {
                 if (Exists(customer.Name))
-                    throw new ObjectAlreadyExists();
+                    throw new ObjectAlreadyExistsException();
 
                 else
                 {
