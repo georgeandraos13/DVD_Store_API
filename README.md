@@ -1,5 +1,5 @@
 # DVD_Store_API
-Basckend API system for a DVD store.
+Backend API system for a DVD store.
 DB manages movies, customers, and actors/actresses.
 Data Context class inherits from DB Data Context, to create the DB from the Models
 Rent table is between movie and customer tables (many to manay).
