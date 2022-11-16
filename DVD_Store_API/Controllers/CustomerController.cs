@@ -18,7 +18,7 @@ namespace DVD_Store_API.Controllers
         }
 
         [HttpPost]
-        [Route("/Customers/Add/Name")]
+        [Route("/customers/Add/Name")]
         public ActionResult AddCustomer(string Name)
         {
             try
@@ -36,7 +36,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpDelete]
-        [Route("/Customers/Del/id")]
+        [Route("/customers/Del/id")]
         public ActionResult DeleteCustomer(int id)
         {
             try
@@ -55,7 +55,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpPut]
-        [Route("Customer/Upd/id/NewName")]
+        [Route("/customers/Upd/id/NewName")]
         public ActionResult UpdateCustomer(int id, string NewName)
         {
             try
@@ -78,7 +78,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpGet]
-        [Route("/Customers/get/all")]
+        [Route("/customers/get/all")]
         public ActionResult<ICollection<Customer>> GetCustomers()
         {
             try
@@ -97,7 +97,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpGet]
-        [Route("/Customers/get/id")]
+        [Route("/customers/get/id")]
         public ActionResult<Customer> GetCustomer(int id)
         {
             try

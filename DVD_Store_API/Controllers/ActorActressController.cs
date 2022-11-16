@@ -19,7 +19,7 @@ namespace DVD_Store_API.Controllers
         }
 
         [HttpPost]
-        [Route("/ActorsActresses/add/name")]
+        [Route("/actoractress/add/name")]
         public ActionResult<ActorActress> AddActorActress(string name)
         {
             try
@@ -36,7 +36,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpDelete]
-        [Route("/ActorsActresses/del/id")]
+        [Route("/actoractress/del/id")]
         public ActionResult DeleteActorActress(int id)
         {
             try
@@ -56,7 +56,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpPut]
-        [Route("/ActorsActresses/upd/id/newname")]
+        [Route("/actoractress/upd/id/newname")]
         public ActionResult<ActorActress> UpdateActorActress(int id, string newname)
         {
             try
@@ -77,7 +77,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpGet]
-        [Route("/ActorsActresses/getall")]
+        [Route("/actoractress/getall")]
         public ActionResult<ICollection<ActorActress>> GetActorsActresses()
         {
             try
@@ -96,7 +96,7 @@ namespace DVD_Store_API.Controllers
             }
         }
         [HttpGet]
-        [Route("ActorsActresses/get/id")]
+        [Route("/actoractress/get/id")]
         public ActionResult<ActorActress> GetActorActress(int id)
         {
             try
